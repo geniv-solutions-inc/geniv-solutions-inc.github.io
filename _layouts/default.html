@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html amp lang="en-CA">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <link rel="canonical" href="{{site.domainUrl}}{{site.baseurl}}{{page.url}}">
+        <!-- Site Info -->
+        <title>{% if page.title %}{{page.title}} - {% endif %}Gdcrocx</title>        
+        <!-- <link href="{{site.baseUrl}}/css/main.css" rel="stylesheet"> -->
+        {% if page.meta %}<meta name="description" content="{{page.meta}}">{% endif %}
+        <!-- Apache Cordova Whitelist Good default declaration:
+            * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+            * Enable eval(): add 'unsafe-eval' to default-src
+        -->
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; media-src 'self'"> -->
+    </head>
+    <body>
+
+        <!-- {% include siteNav.html %} -->
+
+        {{content}}
+
+        {% include 3cx.html %}
+        <!-- {% include footer.html %} -->
+
+        {% if page.url == '/' %}
+            <!-- Home Page -->
+            <script type="application/ld+json">
+                {
+                    "@context": "http://schema.org",
+                    "@type": "WebSite",
+                    "name": "GenIV Solutions Inc.",
+                    "headline":"{{ page.title }}",
+                    "genre":"{{ page.category }}",
+                    "keywords": "{{page.keywords}}", 
+                    "url": "{{site.domainUrl}}",
+                    "inLanguage": "en",
+                    "isFamilyFriendly": "True",
+                    "datePublished":"{{ page.date | date: '%Y-%m-%d' }}",
+                    "url": "{{site.domainUrl}}",
+                    "keywords": "{{page.keywords}}",
+                    {% include schema/author.html %}
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "{{site.domainUrl}}"
+                    }
+                }
+            </script>
+        {% endif %}
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_tag_id}}"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{site.google_tag_id}}');
+        </script>
+    </body>
+</html>

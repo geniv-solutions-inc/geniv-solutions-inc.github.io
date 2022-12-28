@@ -61,3 +61,6 @@ exclude: ['README.md']
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Google Analytics
+google_tag_id: G-88XNDKPL6M
