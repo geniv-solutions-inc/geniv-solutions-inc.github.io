@@ -5,7 +5,7 @@
     {% for service in site.data.services %}
 
         <a href="{{ service.link }}" data-vars-outbound-link="{{ service.link }}" class="col center noStyleLink">
-            <img src="{{service.img}}" class="services-img"/>
+            <img src="{{service.img}}" alt="picture of {{service.title}}" class="services-img"/>
         </a>
 
     {% endfor %}
