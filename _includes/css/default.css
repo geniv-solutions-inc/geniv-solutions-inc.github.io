@@ -75,3 +75,48 @@ a {
 .marginTop20 {
     margin-top: 20px;
 }
+
+.padding20 {
+    padding: 20px;
+}
+
+.paddingTB20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.noStyleLink {
+    text-decoration: none;
+    color: #000;
+}
+
+.textH2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.slimTextH2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.strongTextH4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.textH4 {
+    font-size: 1.5rem;
+}
+
+.textH5 {
+    font-size: 1rem;
+}
+
+.btnText {
+    font-size: 1.5rem !important;
+}
+
+.section-break {
+    padding-top: 3.5rem;
+}

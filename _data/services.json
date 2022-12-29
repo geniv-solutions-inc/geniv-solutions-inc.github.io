@@ -1,0 +1,20 @@
+[  
+    {
+        "title": "PC Build & Assembly",
+        "description": "Build reliable custom PCs for gaming, office workstation and home lab needs, with 1-year free service",
+        "img": "/img/build.png",
+        "link": "#"
+    },    
+    {
+        "title": "IT Services",
+        "description": "Provide IT services (computers, handheld smart devices, printers and networking)",
+        "img": "/img/it-services.jpg",
+        "link": "#"        
+    },
+    {
+        "title": "Reselling Services",
+        "description": "Resell office equipment for local businesses in and around Kelowna",
+        "img": "/img/reseller.jpg",
+        "link": "#"
+    } 
+]

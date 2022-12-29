@@ -29,6 +29,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: GDCrocx
 github_username: geniv-solutions-inc
+contact_number: (647)561-7328
 
 permalink: pretty
 

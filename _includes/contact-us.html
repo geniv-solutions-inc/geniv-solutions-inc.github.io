@@ -1,0 +1,22 @@
+<div class="row section-break">
+    <span class="slimTextH2 text-center">Contact</span>
+</div>
+<div class="row section-break">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.0671124902983!2d-119.47852424881918!3d49.87876623617123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537d8caae5c02749%3A0x642b3629eb8c9c14!2s1961%20Gordon%20Dr%2C%20Kelowna%2C%20BC%20V1Y%208B1!5e0!3m2!1sen!2sca!4v1671138285839!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="col-md-7 col-lg-7"></iframe>
+    <div class="displayInline col-md-3 col-lg-3">
+        <p class="paddingTB20 textH2">GenIV Solutions Inc.</p>
+        <p class="textH4">1961 Gordon Dr, Kelowna, BC V1Y 8B1</p>
+        <a href="tel:{{site.contact_number}}">
+            <button class="container-fluid btn btn-primary">
+                <span class="textH4">Contact Us</span>
+            </button>
+        </a>
+        <div class="text-center">
+            {% for link in site.data.settings %}
+
+                <a href="{{ link.link }}" data-vars-outbound-link="{{ link.link }}" class="padding20 icon-{{ link.title }} social-link-icon" id="{{ link.selector }}" target="_blank"></a>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>

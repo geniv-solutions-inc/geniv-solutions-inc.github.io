@@ -1,0 +1,20 @@
+.center {
+    zoom: 2;
+    display: block;
+    margin: auto;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.services-img {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    margin: 0 auto;
+}
