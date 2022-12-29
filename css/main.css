@@ -3,6 +3,7 @@
 
 {% include css/default.css %}
 {% include css/site-nav.css %}
+{% include css/about.css %}
 {% include css/icons.css %}
 {% include css/footer.css %}
 {% include css/responsive.css %}

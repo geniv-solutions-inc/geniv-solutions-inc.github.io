@@ -1,5 +1,5 @@
 html, input {
-    background: #888;
+    /* background: #888; */
     margin: 0rem 0.5rem;
     padding: 0.5rem;
     font-family: Georgia, 'Bookman Old Style', 'Times New Roman', Times, serif;
@@ -63,3 +63,15 @@ a {
 /* .carousel-item {
     padding: 10rem;
 } */
+
+.displayInline {
+    display: inline-block;
+}
+
+.floatRight {
+    float: right;
+}
+
+.marginTop20 {
+    margin-top: 20px;
+}
