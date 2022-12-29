@@ -14,12 +14,26 @@
             * Enable eval(): add 'unsafe-eval' to default-src
         -->
         <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; media-src 'self'"> -->
+        <style>
+            {% include css/default.css %}
+            {% include css/site-nav.css %}
+            {% include css/icons.css %}
+            /* Error 404 Page CSS */
+            {% include css/error-404.css %}
+            {% include css/footer.css %}
+            /* Site Layout and Responsiveness */
+            {% include css/responsive.css %}
+        </style>
     </head>
     <body>
+
+        {% include site-nav.html %}
 
         {{content}}
 
         {% include 3cx.html %}
+
+        {% include footer.html %}
 
         {% if page.url == '/' %}
             <!-- Home Page -->

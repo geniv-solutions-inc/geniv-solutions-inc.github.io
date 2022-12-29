@@ -1,0 +1,9 @@
+<div class="social-links {{ include.class }}">
+
+    {% for link in site.data.settings %}
+
+        <a href="{{ link.link }}" data-vars-outbound-link="{{ link.link }}" class="icon-{{ link.title }} social-link-icon" id="{{ link.selector }}"></a>
+
+    {% endfor %}
+    
+</div>
