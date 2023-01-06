@@ -20,7 +20,7 @@
 
 title: GenIV Solutions Inc.
 description: >- # this means to ignore newlines until "domainUrl:"
-  GenIV Solutions Inc. is the next step in the journey to bring a positive impact not only to the local community in Kelowna, BC, but also across Canada and the United States. We look forward to serving you with their IT needs.
+  GenIV Solutions Inc. is the next step in the journey to bringing a positive impact, not only to the local community in Kelowna, BC, but also across Canada and the United States. We look forward to serving you with their IT needs.
 domainUrl: "https://geniv.ca"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://geniv.ca" # the base hostname & protocol for your site, e.g. http://example.com
