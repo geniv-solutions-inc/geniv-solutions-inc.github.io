@@ -21,7 +21,7 @@ title: Sitemap
 
     {% if page.layout %}
     
-        {% unless page.title contains "Sitemap"  %}
+        {% unless page.title contains "Sitemap" or page.title contains "error404" %}
         
             {% include sitemap-page.html entry=page %}
             
