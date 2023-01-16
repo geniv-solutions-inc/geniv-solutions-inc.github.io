@@ -2,19 +2,19 @@
     <span class="slimTextH2 text-center">Other Services</span>
 </div>
 <div class="row displayInline section-break">
+
     {% for service in site.data.services %}
 
-        <a href="{{ service.link }}" data-vars-outbound-link="{{ service.link }}" class="col center noStyleLink">
-            <img src="{{service.img}}" alt="picture of {{service.title}}" class="services-img"/>
-        </a>
-
-    {% endfor %}
-</div>
-<div class="row displayInline paddingTB20">
-    {% for service in site.data.services %}
         <div class="col">
-            <p class="textH2 text-center">{{service.title}}</p>
-            <p class="textH4 text-center">{{service.description}}</p>
+            <a href="{{service.link}}" data-vars-outbound-link="{{service.link}}" class="col center noStyleLink">
+                <img src="{{service.img}}" alt="picture of {{service.title}}" class="services-img" width="200px" height="200px" max-height="200px" layout="responsive"/>                        
+                <p class="textH2 text-center">{{service.title}}</p>
+                <p class="textH4 text-center">{{service.description}}</p>
+            </a>
         </div>
+
     {% endfor %}
+
 </div>
+<!-- <div class="row displayInline paddingTB20">
+</div> -->
