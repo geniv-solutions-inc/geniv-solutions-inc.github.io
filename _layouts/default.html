@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html amp lang="en-CA">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-        <link rel="canonical" href="{{site.domainUrl}}{{site.baseurl}}{{page.url}}">
         <!-- Site Info -->
         <title>{% if page.title %}{{page.title}} - {% endif %}GenIV Solutions Inc.</title>        
         <!-- <link href="{{site.baseUrl}}/css/main.css" rel="stylesheet"> -->
@@ -12,9 +11,9 @@
             * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
             * Enable inline JS: add 'unsafe-inline' to default-src
             * Enable eval(): add 'unsafe-eval' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.google-analytics.com 'unsafe-inline'; img-src 'self' https://1157.3cx.cloud https://downloads-global.3cx.com https://www.google-analytics.com www.google-analytics.com https://stats.g.doubleclick.net; connect-src https://www.google-analytics.com www.google-analytics.com https://stats.g.doubleclick.net; frame-src https://www.google.com; style-src 'self' 'unsafe-inline'; media-src 'self'; script-src 'self' 'unsafe-inline' https://downloads-global.3cx.com https://www.google-analytics.com https://www.googletagmanager.com; connect-src https://1157.3cx.cloud https://www.google-analytics.com www.google-analytics.com https://stats.g.doubleclick.net;">
-        <style>
+        -->        
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.google-analytics.com 'unsafe-inline'; img-src 'self' https://1157.3cx.cloud https://downloads-global.3cx.com https://www.google-analytics.com www.google-analytics.com https://stats.g.doubleclick.net; frame-src https://www.google.com; style-src 'self' 'unsafe-inline'; media-src 'self'; script-src 'self' 'unsafe-inline' https://downloads-global.3cx.com https://www.google-analytics.com https://www.googletagmanager.com cdn.ampproject.org; connect-src https://1157.3cx.cloud https://www.google-analytics.com www.google-analytics.com https://stats.g.doubleclick.net;"> -->
+        <style amp-custom>
             {% include css/default.css %}
             {% include css/site-nav.css %}
             {% include css/services.css %}
@@ -29,6 +28,13 @@
             /* Bootstrap 5.2.3 */
             {% include css/bootstrap.min.css %}
         </style>
+        <!-- AMP Initialization Settings -->
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+        <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+        <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+        <link rel="canonical" href="{{site.domainUrl}}{{site.baseurl}}{{page.url}}">
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     </head>
     <body>
 
@@ -64,15 +70,46 @@
         {% endif %}
         {% if site.google_tag_id %}
             <!-- Google tag (gtag.js) -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_tag_id}}"></script>
+            <!-- <amp-script src="https://www.googletagmanager.com/gtag/js?id={{site.google_tag_id}}"></amp-script>
             <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-            gtag('config', '{{site.google_tag_id}}');
-            </script>
-        {% endif %}
-        <script async src="/js/bootstrap.bundle.min.js"></script>
+                gtag('config', '{{site.google_tag_id}}');
+            </script> -->
+            <amp-analytics type="gtag" data-credentials="include">
+                <script type="application/json">
+                    {
+                        "vars" : {
+                            "gtag_id": "{{site.google_tag_id}}",
+                            "config" : {
+                                "{{site.google_tag_id}}": { 
+                                    "groups": "default",
+                                    "linker": { "domains": ["geniv.ca", "geniv-solutions-inc.github.io"] }
+                                }
+                            }
+                        },
+                        "triggers": {
+                            "trackPageview": {
+                              "on": "visible",
+                              "request": "pageview"
+                            },
+                            "outboundLinks": {
+                                "on": "click",
+                                "selector": "a",
+                                "request": "event",
+                                "vars": {
+                                  "eventCategory": "outbound",
+                                  "eventAction": "click",
+                                  "eventLabel": "${outboundLink}"
+                                }
+                            }
+                          }
+                    }
+                </script>
+            </amp-analytics>
+        {% endif %}        
+        <amp-script src="{{site.domainUrl}}{{site.baseUrl}}/js/bootstrap.bundle.min.js"></amp-script>        
     </body>
 </html>
