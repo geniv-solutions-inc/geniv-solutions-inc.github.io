@@ -18,7 +18,7 @@
     },
     {
         "title": "twitter",
-        "link": "https://twitter.com/GDCrocx",
+        "link": "https://twitter.com/GenIVSolutions",
         "action": "pageVisit",
         "selector": "twitter",
         "request": "social",

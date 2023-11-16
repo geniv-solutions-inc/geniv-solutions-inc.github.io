@@ -25,11 +25,11 @@ domainUrl: "https://geniv.ca"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://geniv.ca" # the base hostname & protocol for your site, e.g. http://example.com
 
-author: George Davis
-email: gdcrocx@yahoo.in
-twitter_username: GDCrocx
+author: Nivedha Hari Kumar
+email: info@geniv.ca
+twitter_username: GenIVSolutions
 github_username: geniv-solutions-inc
-contact_number: (647)561-7328
+contact_number: (416)877-8329
 
 permalink: pretty
 
