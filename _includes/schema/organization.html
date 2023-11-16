@@ -1,16 +1,16 @@
 "author": {
     "@type": "Person",
-    "name": "George Davis",
-    "givenName": "George",
-    "familyName": "Davis",
-    "additionalName": "Gdcrocx",
-    "gender": "http://schema.org/Male",
+    "name": "Nivedha Hari Kumar",
+    "givenName": "Nivedha",
+    "familyName": "Hari Kumar",
+    "gender": "https://schema.org/Female",
     "nationality": "Indian",            
     "sameAs": [
-        "https://twitter.com/GDCrocx",
-        "https://github.com/gdcrocx",
-        "https://www.linkedin.com/in/georgedavisc/",
-        "https://gdcrocx.github.io"
+        "https://www.facebook.com/people/Gen-IV-Solutions-Inc/100089145067983/",
+        "https://twitter.com/GenIVSolutions",
+        "https://github.com/geniv-solutions-inc",
+        "https://www.linkedin.com/company/geniv-solutions-inc/",
+        "https://www.nivedha-harikumar.com/"
     ]
 },
 <script type="application/ld+json">
@@ -18,11 +18,17 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "address": {% include schema/postal-address.html %},
-        "areaServed": 
-        <!-- "email": "secretariat(at)google.org", -->
-        <!-- "faxNumber": "(647)561-7328", -->        
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 62.400000,
+                "longitude": -96.466667
+            },
+            "geoRadius": 4023360
+        },
         "name": "{{site.title}}",
-        "telephone": "(647)561-7328",
+        "telephone": "(416)877-8329",
         "url" : "{{site.url}}",
         "founder": {% include schema/person.html %},
         "foundingDate": "2022-12-09",
