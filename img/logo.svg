@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg version="1.0" width="3600.000000pt" height="3533.000000pt" viewBox="0 0 3600.000000 3533.000000"
+   preserveAspectRatio="xMidYMid meet" id="svg2" sodipodi:docname="logo.svg"
+   inkscape:export-filename="geniv_ca-logo-4.tiff" inkscape:export-xdpi="96" inkscape:export-ydpi="96"
+   inkscape:version="1.3 (0e150ed, 2023-07-21)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+   <defs id="defs2">
+      <radialGradient id="blueGradient" cx="50%" cy="50%" r="50%" fx="92%" fy="24%">
+         <stop offset="0%" style="stop-color: #0092FF; stop-opacity: 0.8" id="stop1" />
+         <stop offset="100%" style="stop-color: #0011FF; stop-opacity: 1" id="stop2" />
+      </radialGradient>
+      <linearGradient id="lightBlueGradient" cx="80%" cy="100%" r="100%" fx="60%" fy="20%"
+         gradientTransform="rotate(1)">
+         <stop offset="0%" style="stop-color: #0092FF; stop-opacity: 0" id="stop3" />
+         <stop offset="100%" style="stop-color: #0011FF; stop-opacity: 0.5" id="stop4" />
+      </linearGradient>
+      <mask id="earth">
+         <rect fill="white" x="-5" y="-5" width="10" height="10"></rect>
+         <circle fill="black" cx="3.141592654" r="5" />
+      </mask>
+   </defs>
+   <sodipodi:namedview id="namedview2" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25"
+      inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"
+      inkscape:document-units="pt" inkscape:zoom="0.13406113" inkscape:cx="2416.8079" inkscape:cy="2181.8405"
+      inkscape:window-width="1512" inkscape:window-height="916" inkscape:window-x="0" inkscape:window-y="38"
+      inkscape:window-maximized="0" inkscape:current-layer="svg2" />
+
+   <g transform="matrix(0.1,0,0,-0.1,0,3533)" fill="url(#lightBlueGradient)" stroke="none" id="g3"
+      inkscape:label="SVG Logo BG" style="display:inline">
+      <circle r="5" fill="currentColor" mask="url(#earth)" transform="rotate(-23.5)" />
+   </g>
+   <g transform="matrix(0.1,0,0,-0.1,0,3533)" fill="url(#blueGradient)" stroke="none" id="g2" inkscape:label="SVG Logo"
+      style="display:inline">
+      <ellipse style="display:inline;stroke-width:10.6652" id="path4" cx="30272.836" cy="-20020.348"
+         transform="matrix(0.99999998,0,0,-0.99999998,0,-2.5e-4)" rx="1916.6625" ry="1940.7825"
+         inkscape:label="Dot Circle" />
+      <path style="display:inline;stroke-width:7.5"
+         d="m 11304.053,27084.226 c -23.67,-58.609 -114.138,-252.632 -117.965,-320 -3.827,-67.368 -3.376,-152.626 9.622,-205.675 12.998,-53.049 13.486,-88.633 84.479,-213.786 70.993,-125.154 149.847,-157.172 246.101,-205.773 96.253,-48.6 244.817,-41.784 316.495,-27.086 71.678,14.698 186.1,61.431 357.606,144.336 193.127,93.357 550.526,283.362 574.682,296.685 24.156,13.324 419.34,267.556 484.656,307.432 65.316,39.875 946.46,564.992 1018.312,604.026 1235.467,671.183 1870.448,1173.089 2865.102,1699.578 0,0 774.525,420.5 1020.472,509.876 245.948,89.376 589.365,179.4 794.77,172.858 205.405,-6.542 557.641,-39.492 930.816,-245.874 373.175,-206.381 428.385,-283.418 570.257,-400.957 141.871,-117.54 220.735,-283.349 220.735,-283.349 0,0 136.104,-218.831 128.517,-447.966 -7.587,-229.135 -110.608,-629.365 -572.543,-885.128 -461.934,-255.763 -4519.258,-2444.732 -7389.457,-4755.872 -2870.199,-2311.14 -2388.763,-2955.644 -1760.872,-3960.299 627.891,-1004.654 1606.083,-224.578 2333.478,458.86 727.394,683.439 3192.464,2737.585 5920.735,4430.798 2728.271,1693.214 4802.929,2804.138 4802.929,2804.138 0,0 744.834,325.786 1288.73,-52.497 543.896,-378.283 1143.517,-953.395 1439.692,-1648.854 238.959,-561.108 74.274,-1277.784 -555.209,-1627.965 -629.483,-350.181 -1689.656,-986.392 -7388.302,-4544.108 -2996.846,-1870.957 -6678.033,-4839.883 -7747.68,-7017.999 -470.322,-957.714 1034.48,-1958.9375 1034.48,-1958.9375 0,0 852.989,-486.7788 1578.145,171.8386 2828.02,2568.5289 2181.355,2131.6059 4025.578,3672.9299 2341.003,1956.512 5049.881,3568.521 5049.881,3568.521 l 3291.65,2061.89 c 0,0 1106.504,660.526 1715.087,-109.546 380.883,-481.952 940.893,-1687.05 263.321,-2107.663 -1784.883,-1107.992 -2480.285,-1599.391 -2480.285,-1599.391 0,0 -2250.518,-1531.274 -3967.379,-2929.686 -1106.334,-901.128 -2181.137,-1997.233 -3116.208,-2871.5292 -2292.975,-2143.9459 -2108.699,-3568.3149 -1432.018,-3949.0067 1620.844,-911.8654 3901.445,-553.7723 3901.445,-553.7723 0,0 763.817,61.516 215.911,-354.0324 -547.907,-415.5484 -3065.993,-602.9408 -3065.993,-602.9408 0,0 -2146.904,28.8248 -3555.587,406.5641 -356.006,95.4631 -791.464,205.8544 -1406.319,440.2248 -1795.576,684.4378 -4547.6304,2071.2205 -6632.8168,5416.5875 -401.4041,643.992 -731.3997,1287.829 -997.3384,1922.252 -1579.506,3768.064 -899.4963,7157.196 -778.6226,7808.447 150.5006,810.876 1099.7316,5098.881 5025.8952,8009.162 0,0 1450.4316,1222.793 4055.1186,2087.673 2604.687,864.881 1663.808,-245.752 1198.826,-505.481 C 14638,29434 12560.625,28271.976 12160,27957 c -400.625,-314.976 -686.871,-579.106 -855.947,-872.774 z"
+         id="path15" inkscape:label="Image Path"
+         sodipodi:nodetypes="cssssssssscsssscsssssscssssscssccsscssscscssssscsssc" />
+   </g>
+
+</svg>
