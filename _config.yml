@@ -24,9 +24,6 @@ description: >- # this means to ignore newlines until "domainUrl:"
 domainUrl: "https://static.geniv.ca"
 baseurl: "" # the subpath of your site, e.g. /blog
 
-domainUri: "static.geniv.ca"
-githubPagesDomainUri: "geniv-solutions-inc.github.io" # GitHub Pages Uri
-
 author: Nivedha Hari Kumar
 email: info@geniv.ca
 twitter_username: GenIVSolutions
@@ -67,3 +64,7 @@ exclude: ['README.md']
 
 # Google Analytics
 google_tag_id: G-88XNDKPL6M
+
+# Google Tag Manager
+domainUri: "static.geniv.ca"
+githubPagesDomainUri: "geniv-solutions-inc.github.io" # GitHub Pages Uri
